@@ -26,18 +26,9 @@ namespace ProductService
 
         public void ConfigureServices(IServiceCollection services)
         {
-            if (_env.IsProduction())
-            {
-                Console.WriteLine("--> Using SqlServer Db");
-                services.AddDbContext<AppDbContext>(opt =>
-                    opt.UseSqlServer(Configuration.GetConnectionString("ProductsConn")));
-            }
-            else
-            {
-                Console.WriteLine("--> Using InMem Db");
-                services.AddDbContext<AppDbContext>(opt =>
-                     opt.UseInMemoryDatabase("InMem"));
-            }
+            services.AddDbContext<AppDbContext>(opt =>
+                 opt.UseInMemoryDatabase("InMem"));
+
 
             services.AddScoped<IProductRepo, ProductRepo>();
 
