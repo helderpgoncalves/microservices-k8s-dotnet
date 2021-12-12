@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/hegs/.dotnet/store/|arch|/|tfm|",
+      "/Users/hegs/.nuget/packages"
+    ]
+  }
+}

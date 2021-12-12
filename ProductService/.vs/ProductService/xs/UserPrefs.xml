@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{EDE80E51-617E-4413-BDE7-761949030BE6}|PlatformService">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+    <Files>
+      <File FileName="Startup.cs" Line="12" Column="1" />
+      <File FileName="Program.cs" Line="27" Column="1" />
+      <File FileName="Controllers/PlatformsController.cs" Line="1" Column="1" />
+      <File FileName="Models/Platform.cs" Line="5" Column="25" />
+      <File FileName="Data/AppDbContext.cs" Line="15" Column="2" />
+      <File FileName="Data/IPlatformRepo.cs" Line="14" Column="2" />
+      <File FileName="Data/PlatformRepo.cs" Line="1" Column="1" />
+      <File FileName="Data/PrepDb.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProductService" expanded="True">
+            <Node name="ProductService" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ProductService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
