@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hegs/Downloads/S04E03---.NET-Microservices-Course--main/PlatformService/ProductService.csproj": {}
+    "/Users/hegs/Downloads/microservices-k8s-dotnet/ProductService/ProductService.csproj": {}
   },
   "projects": {
-    "/Users/hegs/Downloads/S04E03---.NET-Microservices-Course--main/PlatformService/ProductService.csproj": {
+    "/Users/hegs/Downloads/microservices-k8s-dotnet/ProductService/ProductService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hegs/Downloads/S04E03---.NET-Microservices-Course--main/PlatformService/ProductService.csproj",
+        "projectUniqueName": "/Users/hegs/Downloads/microservices-k8s-dotnet/ProductService/ProductService.csproj",
         "projectName": "ProductService",
-        "projectPath": "/Users/hegs/Downloads/S04E03---.NET-Microservices-Course--main/PlatformService/ProductService.csproj",
+        "projectPath": "/Users/hegs/Downloads/microservices-k8s-dotnet/ProductService/ProductService.csproj",
         "packagesPath": "/Users/hegs/.nuget/packages/",
-        "outputPath": "/Users/hegs/Downloads/S04E03---.NET-Microservices-Course--main/PlatformService/obj/",
+        "outputPath": "/Users/hegs/Downloads/microservices-k8s-dotnet/ProductService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hegs/.nuget/NuGet/NuGet.Config"

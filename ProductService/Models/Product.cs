@@ -12,7 +12,7 @@ namespace ProductService.Models
         public string Name { get; set; }
 
         [Required]
-        public key Description { get; set; }
+        public string Description { get; set; }
 
         [Required]
         public string Price { get; set; }

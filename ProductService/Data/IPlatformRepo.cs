@@ -9,6 +9,7 @@ namespace ProductService.Data
 
         IEnumerable<Product> GetAllProducts();
         Product GetProductById(int id);
+        IEnumerable<Product> GetProductsByCategory(string category);
         void CreateProduct(Product plat);
     }
 }

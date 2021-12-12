@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5DdmYTGujCI8gvcnR15f9Q/EqQuC0N3zFR7iDX9gJoliVDs6ZIlpkrjeRw8O+aLwkE+5mDaaWtXSdHw5ZNcwZQ==",
+  "dgSpecHash": "uNK8qLmswvl0PAnT2sv9MwEtXyw3Z3s9K44HkYzmumq6d1CvuJq+DfImdaF3tWF7Oun2RgF5S4KE4hdKpAkSkA==",
   "success": true,
-  "projectFilePath": "/Users/hegs/Downloads/S04E03---.NET-Microservices-Course--main/PlatformService/ProductService.csproj",
+  "projectFilePath": "/Users/hegs/Downloads/microservices-k8s-dotnet/ProductService/ProductService.csproj",
   "expectedPackageFiles": [
     "/Users/hegs/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/hegs/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

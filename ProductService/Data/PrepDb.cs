@@ -37,9 +37,10 @@ namespace ProductService.Data
                 Console.WriteLine("--> Seeding Data...");
 
                 context.Products.AddRange(
-                    new Product() {Name="Dot Net", Publisher="Microsoft", Cost="Free"},
-                    new Product() {Name="SQL Server Express", Publisher="Microsoft",  Cost="Free"},
-                    new Product() {Name="Kubernetes", Publisher="Cloud Native Computing Foundation",  Cost="Free"}
+                    new Product() { Name = "Macbook Pro", Description = "Macbook Pro Chip M1 de 2021 Imaculado", Category = "Computadores", Price = "800" },
+                    new Product() { Name = "iPhone X", Description = "Iphone X nunca usado veio da garantia", Category = "Telemóveis", Price = "350" },
+                    new Product() { Name = "iPhone 12", Description = "Telemóvel com algumas marcas, desbloqueado", Category = "Telemóveis", Price = "600" },
+                    new Product() { Name = "Macbook Air", Description = "Macbook Air com Chip M1 e 16gb de RAM, cedido pela empresa", Category = "Computadores", Price = "650" }
                 );
 
                 context.SaveChanges();
