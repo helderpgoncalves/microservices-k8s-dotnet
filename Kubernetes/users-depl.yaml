@@ -1,31 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: products-depl
+  name: users-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: productservice
+      app: userservice
   template:
     metadata:
       labels:
-        app: productservice
+        app: userservice
     spec:
       containers:
-        - name: productservice
-          image: hegs/productservice:latest
+        - name: userservice
+          image: hegs/userservice:latest
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: products-clusterip-srv
+  name: users-clusterip-srv
 spec:
   type: ClusterIP
   selector:
-    app: productservice
+    app: userservice
   ports:
-  - name: productservice
+  - name: userservice
     protocol: TCP
     port: 80
     targetPort: 80 
