@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using ProductService.Data;
-
+using ProductService.SyncDataServices.Http;
 namespace ProductService
 {
     public class Startup
@@ -31,6 +31,8 @@ namespace ProductService
 
 
             services.AddScoped<IProductRepo, ProductRepo>();
+
+            services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
             services.AddGrpc();
             services.AddControllers();
