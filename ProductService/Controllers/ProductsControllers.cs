@@ -4,6 +4,9 @@ using ProductService.Data;
 using ProductService.Dtos;
 using System.Collections.Generic;
 using ProductService.Models;
+using ProductService.SyncDataServices.Http;
+using System.Threading.Tasks;
+
 namespace ProductService.Controllers
 {
     [Route("api/[controller]")]
@@ -12,13 +15,15 @@ namespace ProductService.Controllers
     {
         private readonly IProductRepo _repository;
         private readonly IMapper _mapper;
+        private readonly ICommandDataClient _commandDataClient;
 
-        public ProductsController(IProductRepo repository, IMapper mapper)
+        public ProductsController(IProductRepo repository, IMapper mapper, ICommandDataClient commandDataClient)
         {
             _repository = repository;
             _mapper = mapper;
-        }
+            _commandDataClient = commandDataClient;
 
+        }
         [HttpGet]
         public ActionResult<IEnumerable<ProductReadDto>> GetAllProducts()
         {
@@ -60,7 +65,7 @@ namespace ProductService.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ProductReadDto> CreateProduct(ProductCreateDto productCreateDto)
+        public async Task<ActionResult<ProductReadDto>> CreateProduct(ProductCreateDto productCreateDto)
         {
             if (productCreateDto == null)
             {
@@ -73,6 +78,16 @@ namespace ProductService.Controllers
             _repository.SaveChanges();
 
             var productReadDto = _mapper.Map<ProductReadDto>(product);
+
+            try
+            {
+                await _commandDataClient.SendProductToUser(productReadDto);
+            }
+            catch (System.Exception ex)
+            {
+                System.Console.WriteLine(ex.Message);
+            }
+
             return CreatedAtRoute(nameof(GetProductById), new { Id = productReadDto.Id }, productReadDto);
         }
     }
