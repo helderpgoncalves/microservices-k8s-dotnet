@@ -1,20 +1,9 @@
-import NavbarComponent from "./components/Navbar";
-import Produtos from "./components/Produtos";
-import Users from "./components/Users";
-import Tutorial from "./components/Tutorial";
-function App() {
-  return (
-    <>
-      <NavbarComponent />
-      <Tutorial />
-      <section id="produtos">
-        <Produtos />
-      </section>
-      <section id="users">
-        <Users />
-      </section>
-    </>
-  );
-}
+import React, { useState } from "react";
+import HomeScreen from "./screens/HomeScreen";
+import LoginScreen from "./screens/LoginScreen";
+const App = () => {
+  const [isLogged, setIsLogged] = useState(false);
+  return <>{isLogged ? <HomeScreen /> : <LoginScreen />}</>;
+};
 
 export default App;
